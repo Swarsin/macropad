@@ -1696,6 +1696,106 @@
 				)
 			)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers hide)
@@ -4717,6 +4817,164 @@
 			(project "Macropad"
 				(path "/018e7f3e-5784-4c2b-87aa-8b1cd9b3a667"
 					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(no_connect (at 38.10 78.74) (uuid "1a212c39-bb02-461b-8538-3b7cd0b363a5"))
+	(no_connect (at 38.10 81.28) (uuid "3dcc0d7c-4564-41f9-8333-89036938a0ac"))
+	(no_connect (at 38.10 83.82) (uuid "1b7cae18-9ac5-4925-b160-1bb9f252fe70"))
+	(no_connect (at 38.10 91.44) (uuid "50478268-6374-4419-8eb3-0cf96b9d1858"))
+	(no_connect (at 38.10 93.98) (uuid "0501caea-586f-4a0d-a3c2-c1184fa6318e"))
+	(no_connect (at 38.10 96.52) (uuid "cee1b557-3e38-4e30-99a9-48e47c061cc6"))
+	(no_connect (at 38.10 99.06) (uuid "7bae38ee-552c-4f6e-a77f-78bf3aa804de"))
+	(no_connect (at 38.10 101.60) (uuid "9c6826d0-b12e-48f3-9814-8c2ec7ca7bd1"))
+	(no_connect (at 38.10 104.14) (uuid "008dcf78-6cce-47c8-9a58-2c5ad99698da"))
+	(no_connect (at 38.10 106.68) (uuid "2550fe7d-e4e2-4d84-a693-630d4a6cc5a4"))
+	(no_connect (at 38.10 109.22) (uuid "7e5ce601-a724-4725-ba6f-7bb904e15e5f"))
+	(no_connect (at 50.80 114.30) (uuid "9963dac7-5a9c-4863-8f5c-678024a27d97"))
+	(no_connect (at 53.34 114.30) (uuid "e2ad5da3-a5d8-4bf9-9f67-7233b33a23bf"))
+	(no_connect (at 55.88 114.30) (uuid "96ffb196-6b52-4a71-83bc-95e077829760"))
+	(no_connect (at 68.58 60.96) (uuid "e1babe4e-06e4-4883-9cf8-34da36fc5b22"))
+	(no_connect (at 68.58 68.58) (uuid "43212817-ce62-45bf-8b31-bc2122297c35"))
+	(no_connect (at 68.58 71.12) (uuid "7cd7d605-5de4-430c-9f40-349400708e70"))
+	(no_connect (at 68.58 73.66) (uuid "8b112ab8-dad5-447d-b619-897cee9da5c7"))
+	(no_connect (at 68.58 76.20) (uuid "517a9080-284d-4705-81e2-552dfa6f2955"))
+	(no_connect (at 68.58 78.74) (uuid "c4629270-b3c7-4ebf-8bc6-65917e9de6f0"))
+	(no_connect (at 68.58 81.28) (uuid "a137ffe1-a184-4110-8faf-bd726d0b77b5"))
+	(no_connect (at 68.58 83.82) (uuid "5745b32c-0c0f-4f75-9e8a-a6417a8662de"))
+	(no_connect (at 68.58 86.36) (uuid "1c27208d-11b3-4017-a800-9556bc816dd9"))
+	(no_connect (at 68.58 88.90) (uuid "ff93f64d-3d4c-470d-8b06-ea05266e36db"))
+	(no_connect (at 68.58 93.98) (uuid "dea0aca7-ba49-4a17-a551-5f76ac45895a"))
+	(no_connect (at 68.58 96.52) (uuid "3d5d4ad7-2772-4f54-bf6c-1f6cfee47639"))
+	(no_connect (at 68.58 99.06) (uuid "5d362513-6e39-4a29-85f3-06db36103c64"))
+	(no_connect (at 68.58 104.14) (uuid "807202d9-69a8-4921-807c-49fe516fecd8"))
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 54.61 33.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "35762393-20c2-4705-8efe-50dd11b0f31d")
+		(property "Reference" "#FLG01"
+			(at 54.61 31.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 54.61 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 54.61 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.61 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 54.61 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fbf9c228-200b-4563-9e5c-6c5602d31155")
+		)
+		(instances
+			(project "Macropad"
+				(path "/018e7f3e-5784-4c2b-87aa-8b1cd9b3a667"
+					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 57.15 33.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cf387988-06cf-4501-b650-15926be7d5f4")
+		(property "Reference" "#FLG02"
+			(at 57.15 31.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 57.15 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 57.15 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 57.15 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "331480b5-384a-438f-b83c-e2e2f0d9fe4e")
+		)
+		(instances
+			(project "Macropad"
+				(path "/018e7f3e-5784-4c2b-87aa-8b1cd9b3a667"
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)

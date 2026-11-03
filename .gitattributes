@@ -1,0 +1,5 @@
+* text=auto eol=lf
+*.kicad_pcb text eol=lf
+*.kicad_sch text eol=lf
+*.kicad_pro text eol=lf
+*.step text eol=lf

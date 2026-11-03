@@ -1,0 +1,49 @@
+name: firmware
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install build tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            build-essential \
+            cmake \
+            gcc-arm-none-eabi \
+            libnewlib-arm-none-eabi \
+            libusb-1.0-0-dev \
+            pkg-config
+
+      - name: Check out Pico SDK
+        run: |
+          git clone --depth 1 --branch 2.1.1 \
+            --recurse-submodules --shallow-submodules \
+            https://github.com/raspberrypi/pico-sdk.git \
+            "$RUNNER_TEMP/pico-sdk"
+
+      - name: Configure
+        run: |
+          cmake -S firmware -B firmware/build \
+            -DPICO_BOARD=pico \
+            -DPICO_SDK_PATH="$RUNNER_TEMP/pico-sdk" \
+            -DCMAKE_BUILD_TYPE=Release
+
+      - name: Build
+        run: cmake --build firmware/build -j 4
+
+      - name: Upload firmware
+        uses: actions/upload-artifact@v4
+        with:
+          name: macropad-firmware
+          path: |
+            firmware/build/macropad_firmware.uf2
+            firmware/build/macropad_firmware.elf
+            firmware/build/macropad_firmware.bin

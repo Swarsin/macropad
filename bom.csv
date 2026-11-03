@@ -1,6 +1,6 @@
-﻿Designator,Footprint,Quantity,Value,LCSC Part #
-"D1, D2, D3, D4, D5, D6, D7, D8, D9",Diode_DO-35,9,Diode,
-J1,OLED_128x64,1,OLED_128x64,
-"S1, S2, S3, S4, S5, S6, S7, S8, S9",MX_PCB_1.00u,9,Keyswitch,
-SW1,RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm,1,RotaryEncoder_Switch,
-U1,Raspberry_Pi_Pico,1,Raspberry_Pi_Pico,
+Designator,Footprint,Quantity,Value,Manufacturer,MPN,Supplier,Notes
+"D1, D2, D3, D4, D5, D6, D7, D8, D9",Diode_DO-35,9,1N4148,onsemi,1N4148,Digi-Key,Through-hole; cathode stripe to row net
+J1,OLED_128x64,1,0.96in SSD1306 I2C OLED,Generic,TBD,TBD,4-pin 0.1in header; 3.3V or 5V module
+"S1, S2, S3, S4, S5, S6, S7, S8, S9",MX_PCB_1.00u,9,Cherry MX Red,Cherry,MX1A-11NW,Digi-Key,PCB-mount 1u; keycaps not included
+SW1,RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm,1,EC11E rotary encoder with push,Alps,EC11E15244B2,Digi-Key,20 mm shaft; common pins to GND
+U1,Raspberry_Pi_Pico,1,Raspberry Pi Pico,Raspberry Pi,SC0915,Digi-Key,RP2040 module; headers not included
